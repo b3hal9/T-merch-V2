@@ -1,0 +1,18 @@
+{
+  "name": "PayApp",
+  "version": "2",
+  "main": "index.js",
+  "author": "Bishal Bista",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js",
+    "prod" : "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
+    "path": "^0.12.7",
+    "stripe": "^8.38.0"
+  }
+}
