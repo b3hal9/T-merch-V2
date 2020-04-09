@@ -14,7 +14,8 @@
                 <div class="card-action" style="text-align: center;">
                    <form action="/pay" method="POST">
                     <script 
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        src="https://checkout.stripe.com/checkout.js" 
+                        class="stripe-button"
                         data-key="{{stripePublishableKey}}"
                         data-amount="2000"
                         data-name="Bishal Bista"
@@ -24,7 +25,11 @@
                     >
                 
                     </script>
-                    
+                    <script>
+                      let btn = document.getElementsByClassName('stripe-button-el')[0].style.display='none';
+
+                    </script>
+                    <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase 20$</button>
                 </form>
                 </div>
               </div>
